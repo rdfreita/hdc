@@ -13,6 +13,9 @@ body .page{
 	background: rgba(255, 255, 255, 0.5);
 	padding-bottom: 20px;
 }
+body .page .conteudo{
+	margin-top: 77px;
+}
 footer{
 	position: absolute;
 	bottom: 0;
@@ -52,6 +55,8 @@ body p a.btn-flat{
 body .navbar-default.navbar{
 	background-color: #fff;
 	color: #999;
+	position: fixed;
+	width: 100%;
 }
 body .navbar .navbar-brand{
 	padding: 0;
@@ -253,7 +258,7 @@ body .modal .close{
 	margin-top: -20px;
 	margin-right: -15px;
 }
-/*Fimda modal*/
+/*Fim da modal*/
 
 @media screen and (min-width: 400px) {
 	body{
