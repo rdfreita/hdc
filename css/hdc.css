@@ -1,0 +1,382 @@
+html{
+	background-image: url(../img/fundo-ladrilhos.png);
+}
+html .navbar .collapse .nav{
+	margin:0
+}
+html .navbar .collapse .nav li:last-child{
+	background:transparent
+}
+html .page-header{
+	margin-bottom:20px;
+	margin-top:0;
+	position:fixed;
+	z-index:999;
+	padding-top:30px;
+	width:100%;
+	background:#4f85bb;
+	background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRmODViYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0Zjg1YmIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background:-moz-linear-gradient(top, #4f85bb 0, #4f85bb 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #4f85bb), color-stop(100%, #4f85bb));
+	background:-webkit-linear-gradient(top, #4f85bb 0, #4f85bb 100%);
+	background:-o-linear-gradient(top, #4f85bb 0, #4f85bb 100%);
+	background:-ms-linear-gradient(top, #4f85bb 0, #4f85bb 100%);
+	background:linear-gradient(to bottom, #4f85bb 0, #4f85bb 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4f85bb', endColorstr='#4f85bb', GradientType=0)
+}
+html .page-header h1{
+	color:#fff;
+	display:inline-block;
+	font-size:1.8rem;
+	position:relative;
+	z-index:99
+}
+html .page-header span{
+	line-height:63px;
+	font-size:36px;
+	color:#fff;
+	margin-top:-10px;
+	margin-bottom:10px;
+	height:63px;
+	text-align:center;
+	font-weight:normal
+}
+html .page-header span.left{
+	background:#ffc125
+}
+html .page-header button.btn-primary{
+	margin-top:-55px;
+	padding:0 10px;
+	position:relative;
+	z-index:9999
+}
+html div.container ul.center-block{
+	margin-top: 133px;
+}
+html div.container ul, html .pages .page-header ul{
+	list-style:none;
+	padding-left:0
+}
+html .pages .page-header ul{
+	width: 95%;
+	margin: 0 auto;
+	height: 57px;
+	padding-top: 5px;
+}
+html .pages .page-header .navbar{
+	position: fixed;
+	background: url(../img/fundo-ladrilhos.png);
+	right: 0;
+	z-index: 999;
+	border-radius: 4px 0 0 4px;
+	min-height: 0;
+	box-shadow: none;
+	border-color: transparent;
+	top: 50px;
+}
+html .pages .page-header .navbar .navbar-form .btn-primary{
+	margin-top: 0;	
+}
+html .pages .page-header .navbar .navbar-toggle{
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: 0;
+	border-radius: 0;
+}
+html .pages .page-header .navbar .navbar-toggle:hover{
+	color: #000;
+}
+html .pages .page-header .navbar .navbar-form{
+	padding: 10px 15px;
+	margin: -13px 0 8px;
+}
+html .pages .page-header .navbar .container-fluid{
+	padding-right: 0;
+	padding-left: 0;
+}
+html .pages .page-header .navbar *{
+	border: none;
+	box-shadow: none;
+}
+html .pages .page-header .navbar .navbar-toggle .glyphicon{
+	margin: 5px;
+	color: #000;
+}
+html div.container ul a,html div.container ul a:hover{
+	color:#fff;
+	text-decoration:none
+}
+html div.container ul li.status-chamados{
+	padding-top:10px;
+	clear:both;
+	width:72%;
+	margin: 0 auto;
+}
+html div.container ul li.status-chamados p{
+	background:#f39c12;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-top:0
+}
+html div.container ul li p{
+	margin-bottom:0;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-top:5px
+}
+html div.container li.col-xs-6{
+	width: 45%;
+}
+html div.container .bg-laranja{
+	background:#e77e22 !important;
+	margin-right:20px;
+	font-size:1.2rem;
+}
+html div.container .bg-laranja p{
+	background:#d45300 !important
+}
+html div .bg-azul{
+	background:#3291d5 !important;
+	font-size:1.2rem;
+	color:#fff
+}
+html div.container .bg-azul p{
+	background:#2777b2 !important
+}
+
+html div.container .bg-verde{
+	background:#228b22 !important;
+	color:#fff
+}
+html div.container .bg-branco{
+	background:#fff
+}
+/*Busca*/
+html .busca{
+	position: fixed;
+	z-index: 9999;
+	right: 10px;
+	top: 50px;
+}
+/*html .busca a{
+	display: block;
+	width: 30px;
+	height: 26px;
+}*/
+html body.pages .input-busca{
+	width:109%;
+	margin-left:-15px
+}
+html body.pages .input-busca .input-text label{
+	float:left
+}
+html body.pages .input-busca .input-text input{
+	float:left;
+	width:80%;
+	height:25px;
+	margin-left:10px
+}
+html body.pages .input-busca .regionais{
+	clear:both;
+	height:30px
+}
+html body.pages .input-busca .regionais select{
+	width:162px;
+	height:30px
+}
+html body.pages .input-busca .pesquisa fieldset{
+	border:1px solid #ccc;
+	padding:10px;
+	margin-bottom:15px
+}
+html body.pages .input-busca .pesquisa fieldset .input-text{
+	margin-bottom:35px
+}
+html body.pages .input-busca .pesquisa .btn{
+	padding:0 12px;
+	float:left;
+	margin-left:16%
+}
+/*Final de Busca*/
+html footer{
+	border-top:1px solid #fff;
+	clear:both;
+	margin-top: 20px;
+	width: 100%;
+}
+html footer img{
+	width: 25%;
+}
+.pages .col-xs-11{
+	width:95%
+}
+.pages .bg-opacity{
+	margin:0 auto 20px;
+	width:95%
+}
+.pages ul{
+	border:1px solid #666;
+	margin-bottom:0;
+	clear:both;
+	background:#fff
+}
+.pages .bg-opacity li{
+	height:auto;
+	padding:10px 5px;
+	font-size:1.1rem;
+	min-height:50px
+}
+.pages .bg-opacity li:first-child{
+	border-left:none
+}
+.pages .bg-opacity li.conteudo-help{
+	border-left:none;
+	background:#fff !important
+}
+.pages .col-xs-11 div a>p:first-child{
+	background:#d6d6d6 !important;
+	font-size:1rem;
+	padding:5px
+}
+.pages .col-xs-11>p:first-child span{
+	color:#00698c;
+	font-weight:bold;
+	display:inline-block;
+	margin-left:10px
+}
+.pages a:hover,
+.pages a:active{
+	text-decoration:none
+}
+.pages .bg-opacity .bg-amarelo{
+	background:#ffc125 !important;
+	font-weight:bold
+}
+.pages .bg-opacity .bg-amarelo a{
+	color:#000
+}
+.pages .bg-opacity .bg-amarelo li:first-child{
+	font-weight:normal
+}
+.pages .bg-opacity li.conteudo-help{
+	display:none;
+	height:auto;
+	padding:0;
+	margin-bottom:0
+}
+.pages .bg-opacity li.conteudo-help span{
+	display:block
+}
+.pages .bg-opacity li.conteudo-help .cabecalho{
+	background:#2777b2 !important;
+	padding:1px 5px;
+	color:#fff
+}
+.pages .bg-opacity li.conteudo-help .canal{
+	font-size:.8rem;
+	padding:1px 5px
+}
+.pages .bg-opacity li.conteudo-help .status{
+	font-size:1.5rem;
+	text-align:center;
+	font-weight:bold
+}
+.pages .bg-opacity li.conteudo-help .descricao{
+	text-align:center;
+	display:block;
+	padding-bottom:5px
+}
+.pages span.glyphicon-search{
+	color:#fff;
+	line-height:24px;
+	height:26px;
+	display:inline-block;
+	font-size:2rem;
+	margin-bottom:10px
+}
+.pages.status-chamados ul li:first-child{
+	height:auto;
+	background:#191970 !important;
+	padding:0;
+	height:20px;
+	line-height:20px;
+	min-height:20px;
+	color:#fff
+}
+.pages.status-chamados .bg-opacity ul{
+	border:none;
+	margin-bottom:10px;
+}
+.pages .page-header{
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.pages.status-chamados ul li{
+	border-left:none;
+	padding:5px;
+	background:#fff
+}
+.pages.status-chamados .bg-opacity ul li.observacao{
+	clear:left;
+	background:#fff;
+	height:auto;
+	border-top:1px solid #999
+}
+.pages.status-chamados .bg-opacity ul li:last-child{
+	height:20px;
+	padding:0 0 0 10px;
+	line-height:20px;
+	background:#191970;
+	color:#fff;
+	clear:left;
+	min-height:20px
+}
+.pages.status-chamados .bg-opacity ul li .titulo{
+	display:block;
+	font-weight:bold;
+	margin-bottom:5px
+}
+.pages .input-busca,
+.pages.status-chamados ul li.observacao,
+.escondido{
+	display:none
+}
+.pages.status-chamados .input-busca{
+	clear:both;
+	padding-right:0;
+	padding-left:0;
+	width:110%
+}
+.pages .bg-opacity{
+	padding-top:149px
+}
+.pages.login .input-group{
+	margin:10px 0
+}
+.pages.login .input-group-addon{
+	width:100px
+}
+.pages.login .login-box{
+	margin-top:30px;
+	margin-bottom:30px
+}
+html body.pages.status-chamados .input-busca .input-text input{
+	width:50%;
+	margin-left:4px
+}
+html body.pages.status-chamados .input-busca label{
+	width:25%
+}
+@media (min-width:365px){
+	html .page-header button{
+		margin-top:0
+	}
+	html div.container ul li.status-chamados{
+		width:102%
+	}
+	html body.pages.status-chamados .input-busca{
+		width:105%
+	}
+}

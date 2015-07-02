@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HDC</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<!-- Disabilita o zoom no mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/material-fullpalette.min.css">
+	<link rel="stylesheet" href="css/roboto.min.css">
+	<link rel="stylesheet" href="css/ripples.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body class="index">
+
+	<div class="page">
+		<div class="bs-docs-section clearfix">
+		    <div class="bs-component">
+		        <div class="navbar navbar-default">
+		            <div class="navbar-header">
+		            	
+		                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                </button>-->
+		                <button type="button" class="navbar-toggle settings" data-toggle="collapse" data-target=".navbar-settings-collapse">
+		            		<span class="mdi-action-settings"></span>
+		            	</button>
+		                <a class="navbar-brand" href="javascript:void(0)">
+		                	<span class="mdi-navigation-chevron-left"></span>HDC
+		                </a>
+		            </div>
+		            <div class="navbar-collapse collapse navbar-settings-collapse">
+		                <ul class="nav navbar-nav">
+		                    <li class="active"><a href="javascript:void(0)" class="bt-logout">Logout</a></li>
+		                </ul>
+		            </div>
+		            <!-- Campo de busca -->
+				    <form class="bs-component busca-conteudo clearfix">
+					    <div class="form-group">
+				            <div class="form-control-wrapper">
+				            	<input class="form-control empty busca" id="focusedInput" type="search">
+				            	<div class="floating-label">Busca</div>
+				            	<span class="material-input"></span>
+				            	<div class="radio radio-default">
+			                        <label>
+			                            <input type="radio" name="filtrosDaBusca" id="optionsRadios1" value="normalizado" checked="checked"><span class="circle"></span><span class="check"></span>
+			                            Normalizado
+			                        </label>
+			                    </div>
+			                    <div class="radio radio-danger">
+			                        <label class="text-danger">
+			                            <input type="radio" name="filtrosDaBusca" id="optionsRadios2" value="pendente"><span class="circle"></span><span class="check"></span>
+			                            Pendente
+			                        </label>
+			                    </div>
+				            </div>
+				            <button type="button">
+			            		<span class="mdi-navigation-chevron-right"></span>
+			            	</button>
+				        </div>
+			        </form>
+		        </div>
+		    </div>
+		</div>
+		<div class="menu-sistema bs-component">
+			<ul class="nav nav-pills">
+				<li>
+					<a href="#">
+						<span class="mdi-av-equalizer"></span> Status do Sistema <span class="badge">5</span>
+					</a>
+				</li>
+				<li>
+					<a href="link-loja.html">
+						<span class="mdi-action-store"></span> Status link de Loja <span class="badge">3</span>
+					</a>
+				</li>
+				<li>
+					<a href="status-chamados.html" class="">
+						<span class="mdi-hardware-headset-mic"></span> Status dos Chamados <span class="badge text-danger">11</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bs-component wlogout">
+	        <div class="modal">
+	            <div class="modal-dialog">
+	                <div class="modal-content">
+	                    <div class="modal-header">
+	                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	                        <h4 class="modal-title"HDC - Logout</h4>
+	                    </div>
+	                    <div class="modal-body">
+	                        <p>Você realmente deseja sair do sistema?</p>
+	                    </div>
+	                    <div class="modal-footer">
+	                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+	                        <button type="button" class="btn btn-primary">Logout</button>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/material.min.js"></script>
+	<script src="js/ripples.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).on("click",".navbar-settings-collapse",function(){
+			$(this).parents('.page').find('.modal').show();
+			return false;
+		});
+		$(document).on("click",".modal-header .close",function(){
+			$(this).parents('.page').find('.modal').hide();
+			return false;
+		});
+		$(document).on("click",".modal-footer .btn-default",function(){
+			$(this).parents('.page').find('.modal').hide();
+			return false;
+		});
+	</script>
+</body>
+</html>

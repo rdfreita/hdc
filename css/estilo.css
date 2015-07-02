@@ -1,0 +1,267 @@
+body{
+	background-image: url("../img/fundo-sampa.jpg");
+	background-attachment: fixed;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 0;
+
+}
+body .page{
+	position: relative;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.5);
+	padding-bottom: 20px;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	clear: both;
+}
+.centralizar{
+	width: 80%;
+	margin: 0 auto;
+}
+.form-control, .form-control:focus{
+	width: 100%;
+	padding: 5px;
+	color: #999;
+}
+body h3{
+	color: #fff;
+	margin: 0 10px 20px;
+	border-bottom: 1px solid #fff;
+	margin-top: 20px;
+}
+body form a.btn{
+	display: block;
+	text-align: center;
+}
+body p.btn-flat{
+	font-size: 12px;
+	text-align: center;
+}
+body p a.btn-flat{
+	font-size: 11px;
+	text-align: center;;
+	display: block;
+	margin-top: -10px;
+}
+
+/*Menu principal*/
+body .navbar-default.navbar{
+	background-color: #fff;
+	color: #999;
+}
+body .navbar .navbar-brand{
+	padding: 0;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 50px;
+}
+body .navbar .navbar-brand .mdi-navigation-chevron-left{
+	background: rgba(255, 215, 0, 1);
+	color: #fff;
+	font-weight: bold;
+	display: block;
+	float: left;
+	height: 50px;
+	font-size: 51px;
+	margin-right: 20px;
+}
+body .navbar .navbar-header .settings{
+	padding: 0;
+	margin: 11px 0 0;
+}
+body .navbar .navbar-header .navbar-toggle{
+	margin-right: 0;
+}
+body .navbar .navbar-header .navbar-busca{
+	padding: 4px 5px 0 0;
+}
+/*Fim do menu principal*/
+
+/*Busca*/
+body .busca-conteudo{
+	background-color: #fff;
+	padding: 15px 0;
+	margin-top: -20px;
+	display: none;
+}
+body .busca-conteudo .form-control-wrapper{
+	width: 70%;
+	float: left;
+	margin-left: 50px;
+}
+body .busca-conteudo .form-control-wrapper .busca{
+	width: 90%;
+}
+body .busca-conteudo .form-control-wrapper .radio label{
+	padding-left: 30px;
+	float: left;
+	margin-top: -7px;
+}
+body .busca-conteudo .form-control-wrapper .radio-danger label .circle{
+	border-color: #f00;
+}
+body .busca-conteudo button{
+	background-color: #999;
+	border: none;
+	margin: 0;
+	height: 53px;
+	color: #fff;
+	width: 45px;
+	float: right;
+}
+body .busca-conteudo button span{
+	font-size: 50px;
+	padding: 0;
+	display: block;
+	margin-left: -7px;
+}
+/*Fim da Busca*/
+/*Página de login*/
+h1{
+	width: 60px;
+	margin: 30px auto 10px;
+}
+/*Fim da página de login*/
+
+/*Página inicial*/
+.barra{
+	background: #000;
+	height: 30px;
+}
+.menu-sistema .nav{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.menu-sistema .nav li{
+	width: 100%;
+}
+.menu-sistema .nav li a{
+	color: #fff;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0;
+}
+body .nav>li>a:focus, body .nav>li>a:hover{
+	background-color: #999;
+}
+.menu-sistema .nav li a .badge{
+	float: right;
+	background-color: transparent;
+	color: #fff;
+	margin-top: 9px;
+}
+.menu-sistema .nav li a .badge.text-danger{
+	color: #f44336;
+}
+/*Fim da página inicial*/
+/*Painel dos chamados*/
+body .panel{
+	clear: both;
+}
+body .panel ul{
+	list-style: none;
+}
+body .panel ul li{
+	float: left;
+	width: 33%;
+}
+body .panel .panel-body{
+	padding: 15px 15px 0;
+}
+body .panel .alert{
+	clear: both;
+	margin: 10px -15px 0;
+	display: none;
+	padding: 0;
+}
+body .panel .alert .cabecalho{
+	display: block;
+	text-align: right;
+	padding-right: 5px;
+	font-size: 11px;
+	background: #dedede;
+	color: #000;
+}
+body .panel .alert .status{
+	display: block;
+	text-align: center;
+	padding: 10px 10px 2px;
+}
+body .panel .alert .descricao{
+	text-align: center;
+	display: block;
+	padding-bottom: 5px;
+}
+body .panel .panel-heading{
+	height: 50px;
+	border-radius: 0;
+}
+body.status-chamados .panel .panel-body{
+	padding: 0 10px;
+}
+body.status-chamados .panel ul{
+	padding-left: 0;
+	margin-bottom: 0;
+}
+body.status-chamados .panel .panel-heading{
+	height: 35px;
+}
+body.status-chamados .panel .panel-body ul li{
+	width: 25%;
+	font-size: 11px;
+	border-right: 1px solid #ccc;
+	height: 45px;
+	padding: 10px 3px 0;
+}
+body.status-chamados .panel .panel-heading ul li{
+	width: 50%;
+	text-align: center;
+}
+body.status-chamados .panel .panel-body ul li.rodape-chamados{
+	width: 100%;
+	display: block;
+	float: none;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	padding:0 5px 0 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	clear: both;
+	margin-top: 35px;
+	color: #fff;
+}
+body.status-chamados .panel .panel-footer{
+	background-color: #03a9f4;
+  	color: rgba(255,255,255,.84);
+  	margin: 0;
+  	padding: 2px 5px;
+  	font-size: 11px;
+}
+body.status-chamados .panel .panel-footer .descricao{
+	text-align: left;
+}
+/*Fim do painel dos chamados*/
+/*Modal*/
+body .modal{
+	top: 30%;
+}
+body .modal .close{
+	margin-top: -20px;
+	margin-right: -15px;
+}
+/*Fimda modal*/
+
+@media screen and (min-width: 400px) {
+	body{
+		background-position: center center;
+	}
+	body .busca-conteudo .form-control-wrapper .busca{
+		width: 100%;
+	}
+	body .busca-conteudo .form-control-wrapper .radio-danger{
+		margin-left: 50%;
+	}
