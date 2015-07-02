@@ -10,11 +10,13 @@ body{
 body .page{
 	position: relative;
 	height: 100%;
-	background: rgba(255, 255, 255, 0.5);
 	padding-bottom: 20px;
 }
 body .page .conteudo{
-	margin-top: 77px;
+	height: 100%;
+}
+body .page .background-com-opacidade{
+	background: rgba(255, 255, 255, 0.8);
 }
 footer{
 	position: absolute;
@@ -75,15 +77,22 @@ body .navbar .navbar-brand .mdi-navigation-chevron-left{
 	font-size: 51px;
 	margin-right: 20px;
 }
-body .navbar .navbar-header .settings{
+body .navbar .navbar-header .settings a{
 	padding: 0;
 	margin: 11px 0 0;
+	color: #999;
 }
 body .navbar .navbar-header .navbar-toggle{
 	margin-right: 0;
 }
 body .navbar .navbar-header .navbar-busca{
 	padding: 4px 5px 0 0;
+}
+body .navbar .navbar-header .navbar-toggle.settings{
+	margin-top: 3px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	padding-right: 5px;
 }
 /*Fim do menu principal*/
 
@@ -138,6 +147,13 @@ body .conteudo .btn-logout{
 	margin-right: auto;
 	display: block;
 }
+body .conteudo .nav .mdi-action-exit-to-app{
+	color: #999;
+}
+body .page .cabecalho-conteudo{
+	margin-top: 50px;
+	padding-top: 30px;
+}
 /*Fim da página de configuração*/
 /*Página inicial*/
 .barra{
@@ -153,9 +169,10 @@ body .conteudo .btn-logout{
 	width: 100%;
 }
 .menu-sistema .nav li a{
-	color: #fff;
+	color: #666;
 	border-bottom: 1px solid #ccc;
 	border-radius: 0;
+	text-transform: uppercase;
 }
 body .nav>li>a:focus, body .nav>li>a:hover{
 	background-color: #999;
@@ -256,16 +273,17 @@ body.status-chamados .panel .panel-footer{
 body.status-chamados .panel .panel-footer .descricao{
 	text-align: left;
 }
+
 /*Fim do painel dos chamados*/
-/*Modal*/
-body .modal{
-	top: 30%;
+/*Pagina ocupando a visão toda*/
+html, body{
+	height: 100%;
 }
-body .modal .close{
-	margin-top: -20px;
-	margin-right: -15px;
+.rodape{
+	position: absolute;
+	bottom: 0;
 }
-/*Fim da modal*/
+/*Fim da página ocupando a visão toda*/
 
 @media screen and (min-width: 400px) {
 	body{
