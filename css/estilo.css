@@ -180,7 +180,7 @@ body .nav>li>a:focus, body .nav>li>a:hover{
 .menu-sistema .nav li a .badge{
 	float: right;
 	background-color: transparent;
-	color: #fff;
+	color: #666;
 	margin-top: 9px;
 }
 .menu-sistema .nav li a .badge.text-danger{
