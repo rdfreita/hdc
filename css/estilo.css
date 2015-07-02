@@ -57,6 +57,7 @@ body .navbar-default.navbar{
 	color: #999;
 	position: fixed;
 	width: 100%;
+	z-index: 99;
 }
 body .navbar .navbar-brand{
 	padding: 0;
@@ -131,7 +132,13 @@ h1{
 	margin: 30px auto 10px;
 }
 /*Fim da página de login*/
-
+/*Página de Configuração*/
+body .conteudo .btn-logout{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+/*Fim da página de configuração*/
 /*Página inicial*/
 .barra{
 	background: #000;
