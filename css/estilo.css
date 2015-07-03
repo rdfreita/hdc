@@ -18,9 +18,6 @@ body .page .conteudo{
 body .page .background-com-opacidade{
 	background: rgba(255, 255, 255, 0.8);
 }
-body.login .page .background-com-opacidade{
-	padding-top: 30px;
-}
 footer{
 	position: absolute;
 	bottom: 0;
@@ -149,6 +146,18 @@ h1{
 	width: 60px;
 	margin: 30px auto 10px;
 }
+body.login .page .cabecalho-conteudo{
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+body.login .page .background-com-opacidade{
+	padding-top: 30px;
+	-webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+  	-moz-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+  	box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+  	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=10, Color='#33000000');
+
+}
 /*Fim da página de login*/
 /*Página de Configuração*/
 body .conteudo .btn-logout{
@@ -162,10 +171,6 @@ body .conteudo .nav .mdi-action-exit-to-app{
 body .page .cabecalho-conteudo{
 	margin-top: 50px;
 	padding-top: 30px;
-}
-body.login .page .cabecalho-conteudo{
-	margin-top: 0;
-	margin-bottom: 30px;
 }
 /*Fim da página de configuração*/
 /*Página inicial*/
