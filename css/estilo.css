@@ -73,6 +73,9 @@ body .navbar .navbar-brand{
 	font-weight: bold;
 	line-height: 50px;
 	display: block;
+	margin-left: 0;
+}
+body.index .page .navbar .navbar-brand{
 	margin-left: 10px;
 }
 body .navbar .navbar-brand .mdi-navigation-chevron-left{
