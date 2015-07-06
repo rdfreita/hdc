@@ -148,7 +148,11 @@ body .busca-conteudo button span{
 body .busca-conteudo .form-group{
 	float: left;
 	width: 70%;
-	margin-left: -40px;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+body .busca-conteudo .form-group .form-control{
+	margin-left: 25px;
 }
 /*Fim da Busca*/
 /*Página de login*/
