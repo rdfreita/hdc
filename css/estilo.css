@@ -72,6 +72,8 @@ body .navbar .navbar-brand{
 	font-size: 30px;
 	font-weight: bold;
 	line-height: 50px;
+	display: block;
+	margin-left: 10px;
 }
 body .navbar .navbar-brand .mdi-navigation-chevron-left{
 	background: rgba(255, 215, 0, 1);
@@ -208,6 +210,8 @@ body .nav>li>a:focus, body .nav>li>a:hover{
 /*Painel dos chamados*/
 body .panel{
 	clear: both;
+	background-color: transparent;
+	box-shadow: none;
 }
 body .panel ul{
 	list-style: none;
@@ -218,6 +222,7 @@ body .panel ul li{
 }
 body .panel .panel-body{
 	padding: 15px 15px 0;
+	background-color: #fff;
 }
 body .panel .alert{
 	clear: both;
