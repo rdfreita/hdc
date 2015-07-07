@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HDC</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<!-- Disabilita o zoom no mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<!-- Disabilita o zoom no mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- inject:css -->
+
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	
+	<link rel="stylesheet" href="css/estilo.css">
+
+	
+	<link rel="stylesheet" href="css/material-fullpalette.min.css">
+
+	
+	<link rel="stylesheet" href="css/material.min.css">
+
+	
+	<link rel="stylesheet" href="css/ripples.min.css">
+
+	
+	<link rel="stylesheet" href="css/roboto.min.css">
+
+	
+	<!-- endinject -->
+
+
+	<style>
+    ul.item
+	    {
+	         cursor: pointer;
+	    }
+	</style>
+</head>
+<body class="status-chamados">
+	<div class="page">
+	<div class="bs-docs-section clearfix">
+	    <div class="bs-component">
+	        <div class="navbar navbar-default navbar-fixed-top">
+	            <div class="navbar-header">
+	            	<button type="button" class="navbar-toggle navbar-busca" data-toggle="collapse">
+	            		<span class="mdi-action-search"></span>
+	            	</button>
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <button type="button" class="navbar-toggle settings" data-toggle="collapse" data-target=".navbar-settings-collapse">
+	            		<a href="configuracao.html"><span class="mdi-action-settings"></span></a>
+	            	</button>
+	            	
+	                <a class="navbar-brand" href="javascript:void(0)">
+	                	<span class="mdi-navigation-chevron-left"></span>HDC
+	                </a>
+	            </div>
+	            <div class="navbar-collapse collapse navbar-responsive-collapse">
+	                <ul class="nav navbar-nav">
+	                    <li class="active"><a href="index.html">Home</a></li>
+	                    <li><a href="#">Status do Sistema</a></li>
+	                    <li><a href="#">status Link de Loja</a></li>
+	                    <li><a href="#">Status dos Chamados</a></li>
+	                </ul>
+	            </div>
+	            <!-- Campo de busca -->
+			    <form class="bs-component busca-conteudo clearfix">
+				    <div class="form-group">
+			            <div class="form-control-wrapper">
+			            	<input class="form-control empty busca" id="focusedInput" type="search">
+			            	<div class="floating-label">Busca</div>
+			            	<span class="material-input"></span>
+			            	<div class="radio radio-default">
+		                        <label>
+		                            <input type="radio" name="filtrosDaBusca" id="optionsRadios1" value="normalizado" checked="checked"><span class="circle"></span><span class="check"></span>
+		                            Normalizado
+		                        </label>
+		                    </div>
+		                    <div class="radio radio-danger">
+		                        <label class="text-danger">
+		                            <input type="radio" name="filtrosDaBusca" id="optionsRadios2" value="pendente"><span class="circle"></span><span class="check"></span>
+		                            Pendente
+		                        </label>
+		                    </div>
+			            </div>
+			            <button type="button">
+		            		<span class="mdi-navigation-chevron-right"></span>
+		            	</button>
+			        </div>
+		        </form>
+	        </div>
+	    </div>
+
+	    
+	</div>
+	<div class="conteudo">
+		<div class="bs-component">
+			<h3>Status dos Chamados</h3>
+	        <div class="panel panel-info">
+	            <div class="panel-heading">
+		            <ul>
+						<li>DSF</li>
+						<li>IN15053553</li>
+					</ul>
+	            </div>
+	            <div class="panel-body">
+	                <ul class="row item">
+						<li class="text-center">
+							<span class="titulo">Reg.</span>
+							<span class="texto">-TSP I</span>
+						</li>
+						<li class="text-center">
+							<span class="titulo">Canal</span>
+							<span class="texto">Tim Store</span>
+						</li>
+						<li class="text-center">
+							<span class="titulo">Status</span>
+							<span class="texto">Waiting</span>
+						</li>
+						<li class="text-center bg-verde">
+							<span class="titulo">SLA</span>
+							<span class="texto">84d / 4h</span>
+						</li>
+						<li class="rodape-chamados">Início - 20/02/2015 11:37:50</li>
+					</ul>
+				</div>
+				<div class="panel-footer alert alert-dismissable alert-info">
+					<span class="titulo">Observação</span>
+					<span class="descricao">
+						PDV Daniel Grosseri Nº cadastrado 19981130238 código DSF - 17156 falha na migração. Descrição do erro: PDV relata que após migrar a linha do cliente, ficou ativa no KV, só que no CBCF e no DSF apresenta erro...
+					</span>				
+				</div>
+	        </div>
+	        <div class="panel panel-info">
+	            <div class="panel-heading">
+		            <ul>
+						<li>DSF</li>
+						<li>IN15053553</li>
+					</ul>
+	            </div>
+	            <div class="panel-body">
+	                <ul class="row item">
+						<li class="text-center">
+							<span class="titulo">Reg.</span>
+							<span class="texto">-TSP I</span>
+						</li>
+						<li class="text-center">
+							<span class="titulo">Canal</span>
+							<span class="texto">Tim Store</span>
+						</li>
+						<li class="text-center">
+							<span class="titulo">Status</span>
+							<span class="texto">Waiting</span>
+						</li>
+						<li class="text-center bg-verde">
+							<span class="titulo">SLA</span>
+							<span class="texto">84d / 4h</span>
+						</li>
+						<li class="rodape-chamados">Início - 20/02/2015 11:37:50</li>
+					</ul>
+				</div>
+				<div class="panel-footer alert alert-dismissable alert-info">
+					<span class="titulo">Observação</span>
+					<span class="descricao">
+						PDV Daniel Grosseri Nº cadastrado 19981130238 código DSF - 17156 falha na migração. Descrição do erro: PDV relata que após migrar a linha do cliente, ficou ativa no KV, só que no CBCF e no DSF apresenta erro...
+					</span>				
+				</div>
+	        </div>
+
+			<div class="bs-component wlogout">
+		        <div class="modal">
+		            <div class="modal-dialog">
+		                <div class="modal-content">
+		                    <div class="modal-header">
+		                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		                        <h4 class="modal-title">HDC - Logout</h4>
+		                    </div>
+		                    <div class="modal-body">
+		                        <p>Você realmente deseja sair do sistema?</p>
+		                    </div>
+		                    <div class="modal-footer">
+		                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+		                        <button type="button" class="btn btn-primary">Logout</button>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+	</div>
+	<!-- inject:js -->
+
+	<script src="js/bootstrap.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery.min.js"></script>
+
+	<script src="js/material.js"></script>
+
+	<script src="js/material.min.js"></script>
+
+	<script src="js/npm.js"></script>
+
+	<script src="js/ripples.js"></script>
+
+	<script src="js/ripples.min.js"></script>
+
+	<!-- endinject -->
+    <script type="text/javascript">
+		
+		$(document).on("click",".item",function(){
+			$(this).parents('.panel').find('.alert').toggle();
+			return false;
+		});
+
+		$(document).on('focus', '.busca', function(){
+				$(this).removeClass('empty');
+			});
+		$(document).on('click', 'button .mdi-action-search', function(){
+				$('.busca-conteudo').toggle();
+			});
+		$(document).on("click",".navbar-settings-collapse",function(){
+			$(this).parents('.page').find('.modal').show();
+			return false;
+		});
+		$(document).on("click",".modal-header .close",function(){
+			$(this).parents('.page').find('.modal').hide();
+			return false;
+		});
+		$(document).on("click",".modal-footer .btn-default",function(){
+			$(this).parents('.page').find('.modal').hide();
+			return false;
+		});
+	</script>
+</body>
+</html>
