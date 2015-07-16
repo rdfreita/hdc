@@ -5,228 +5,209 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 	<!-- Disabilita o zoom no mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<!-- Disabilita o zoom no mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 	<!-- inject:css -->
 
-	
+		
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 
-	
+		
 	<link rel="stylesheet" href="css/estilo.css">
 
-	
+		
 	<link rel="stylesheet" href="css/material-fullpalette.min.css">
 
-	
+		
 	<link rel="stylesheet" href="css/material.min.css">
 
-	
+		
 	<link rel="stylesheet" href="css/ripples.min.css">
 
-	
+		
 	<link rel="stylesheet" href="css/roboto.min.css">
 
-	
+		
 	<!-- endinject -->
 
+
+
+
 	<style>
-    	ul.btn-help 
+    ul.item
 	    {
-	        cursor: pointer;
+	         cursor: pointer;
 	    }
 	</style>
 </head>
-<body class="pages">
-	<div class="page-header clearfix">
-		<div class="container">
-			<a href="index.html"><span class="glyphicon glyphicon-chevron-left left col-xs-2" aria-hidden="true"></span></a>
-			<h1 class="col-xs-8">Status Sistema</h1>
-
-			<button class="btn btn-primary pull-right" type="button">Logout</button>
-		</div>
-		<div>
-			<ul class="row titulo bg-azul">
-				<li class="col-xs-3 text-center">Tipo de Operação</li>
-				<li class="col-xs-3 text-center">Sistema</li>
-				<li class="col-xs-3 text-center">Status</li>
-				<li class="col-xs-3 text-center">Previsão de Retorno</li>
-			</ul>
-		</div>
+<body>
+	<div class="page">
+	<div class="bs-docs-section clearfix">
+	    <div class="bs-component">
+	        <div class="navbar navbar-default">
+	            <div class="navbar-header">
+	            	<button type="button" class="navbar-toggle navbar-busca" data-toggle="collapse">
+	            		<span class="mdi-action-search"></span>
+	            	</button>
+	                
+	                <button type="button" class="navbar-toggle settings" data-toggle="collapse" data-target=".navbar-settings-collapse">
+	            		<a href="configuracao.html"><span class="mdi-action-settings"></span></a>
+	            	</button>
+	            	
+	                <a class="navbar-brand" href="index.html">
+	                	<span class="mdi-navigation-chevron-left"></span>HDC
+	                </a>
+	            </div>
+	            
+	            
+	            <!-- Campo de busca -->
+			    <form class="bs-component busca-conteudo clearfix">
+				    <div class="form-group">
+	                    <select class="form-control" id="select">
+	                        <option>Regionais</option>
+	                        <option>Rio de Janeiro</option>
+	                        <option>São Paulo</option>
+	                    </select>
+		            </div>
+		            <button type="button">
+	            		<span class="mdi-navigation-chevron-right"></span>
+	            	</button>
+		        </form>
+	        </div>
+	    </div>
 	</div>
-	
-	<div class="bg-opacity row container">
-		
+	<div class="bs-component conteudo">
+		<h3>Link de Loja</h3>
+        <div class="panel panel-info container">
+            <div class="panel-heading">
+	            <ul>
+					<li>Loja</li>
+					<li>Status</li>
+					<li>Previsão de Retorno</li>
+				</ul>
+            </div>
+            <div class="panel-body">
+                <ul class="row item">
+					<li>teste</li>
+					<li>Pendente</li>
+					<li>12:12</li>
+				</ul>
+            </div>
+        </div>
+        <div class="panel panel-info container">
+            <div class="panel-heading">
+	            <ul>
+					<li>Loja</li>
+					<li>Status</li>
+					<li>Previsão de Retorno</li>
+				</ul>
+            </div>
+            <div class="panel-body">
+                <ul class="row btn-help item">
+					<li>teste</li>
+					<li>Pendente</li>
+					<li>12:12</li>
+				</ul>
+            </div>
+        </div>
+        <div class="panel panel-danger container">
+            <div class="panel-heading">
+	            <ul>
+					<li>Loja</li>
+					<li>Status</li>
+					<li>Previsão de Retorno</li>
+				</ul>
+            </div>
+            <div class="panel-body">
+                <ul class="row btn-help item">
+					<li>teste</li>
+					<li>Pendente</li>
+					<li>12:12</li>
+				</ul>
+				<div class="alert alert-dismissable alert-danger">
+					<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
+					<span class="status">Tipo de Impacto</span>
+					<span class="descricao">Teste</span>
+				</div>
+            </div>
+        </div>
+        <div class="panel panel-info container">
+            <div class="panel-heading">
+	            <ul>
+					<li>Loja</li>
+					<li>Status</li>
+					<li>Previsão de Retorno</li>
+				</ul>
+            </div>
+            <div class="panel-body">
+                <ul class="row btn-help item">
+					<li>teste</li>
+					<li>Pendente</li>
+					<li>12:12</li>
+				</ul>
+            </div>
+        </div>
+        <div class="panel panel-info container">
+            <div class="panel-heading">
+	            <ul>
+					<li>Loja</li>
+					<li>Status</li>
+					<li>Previsão de Retorno</li>
+				</ul>
+            </div>
+            <div class="panel-body">
+                <ul class="row btn-help item">
+					<li>teste</li>
+					<li>Pendente</li>
+					<li>12:12</li>
+				</ul>
+            </div>
+        </div>
+        <div class="panel panel-danger container">
+            <div class="panel-heading">
+	            <ul>
+					<li>Loja</li>
+					<li>Status</li>
+					<li>Previsão de Retorno</li>
+				</ul>
+            </div>
+            <div class="panel-body">
+                <ul class="row btn-help item">
+					<li>teste</li>
+					<li>Pendente</li>
+					<li>12:12</li>
+				</ul>
+				<div class="alert alert-dismissable alert-danger">
+					<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
+					<span class="status">Tipo de Impacto</span>
+					<span class="descricao">Teste</span>
+				</div>
+            </div>
+        </div>
 
-        <ul class="row btn-help item">
-			<li class="col-xs-3">Atendimento ao cliente</li>
-			<li class="col-xs-3 text-center">Portal Protocolos</li>
-			<li class="col-xs-3 text-center">Normalizado</li>
-			<li class="col-xs-3 text-center"></li>
-		</ul>
-		<ul class="row btn-help item bg-amarelo">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">URA Cadauto</li>
-			<li class="col-xs-3 text-center">Pendente</li>
-			<li class="col-xs-3 text-center">12:12</li>
-			<li class="col-xs-12 conteudo-help clearfix" role="alert">
-				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-				<span class="canal">Canal de vendas / Mass Channel - Retail</span>
-				<span class="status">Tipo de Impacto</span>
-				<span class="descricao">Teste5</span>
-			</li>
-		</ul>
-		<ul class="row btn-help item bg-amarelo">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">DSF</li>
-			<li class="col-xs-3 text-center">Pendente</li>
-			<li class="col-xs-3 text-center">12:25</li>
-			<li class="col-xs-12 conteudo-help clearfix" role="alert">
-				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-				<span class="canal">Canal de vendas / Mass Channel - Retail</span>
-				<span class="status">Tipo de Impacto</span>
-				<span class="descricao">Teste5</span>
-			</li>
-		</ul>
-		<ul class="row btn-help item">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">HRD</li>
-			<li class="col-xs-3 text-center">Normalizado</li>
-			<li class="col-xs-3 text-center"></li>
-		</ul>
-		<ul class="row btn-help item">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">USSD</li>
-			<li class="col-xs-3 text-center">Normalizado</li>
-			<li class="col-xs-3 text-center"></li>
-		</ul>
-		<ul class="row btn-help item">
-			<li class="col-xs-3">Consulta Fidelização</li>
-			<li class="col-xs-3 text-center">CBCF</li>
-			<li class="col-xs-3 text-center">Normalizado</li>
-			<li class="col-xs-3 text-center"></li>
-		</ul>
-		<ul class="row btn-help item bg-amarelo">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">URA Cadauto</li>
-			<li class="col-xs-3 text-center">Pendente</li>
-			<li class="col-xs-3 text-center">12:12</li>
-			<li class="col-xs-12 conteudo-help clearfix" role="alert">
-				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-				<span class="canal">Canal de vendas / Mass Channel - Retail</span>
-				<span class="status">Tipo de Impacto</span>
-				<span class="descricao">Teste5</span>
-			</li>
-		</ul>
-		<ul class="row btn-help item bg-amarelo">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">URA Cadauto</li>
-			<li class="col-xs-3 text-center">Pendente</li>
-			<li class="col-xs-3 text-center">12:12</li>
-			<li class="col-xs-12 conteudo-help clearfix" role="alert">
-				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-				<span class="canal">Canal de vendas / Mass Channel - Retail</span>
-				<span class="status">Tipo de Impacto</span>
-				<span class="descricao">Teste5</span>
-			</li>
-		</ul>
-		<ul class="row btn-help item bg-amarelo">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">URA Cadauto</li>
-			<li class="col-xs-3 text-center">Pendente</li>
-			<li class="col-xs-3 text-center">12:12</li>
-			<li class="col-xs-12 conteudo-help clearfix" role="alert">
-				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-				<span class="canal">Canal de vendas / Mass Channel - Retail</span>
-				<span class="status">Tipo de Impacto</span>
-				<span class="descricao">Teste5</span>
-			</li>
-		</ul>
-		<ul class="row btn-help item bg-amarelo">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">URA Cadauto</li>
-			<li class="col-xs-3 text-center">Pendente</li>
-			<li class="col-xs-3 text-center">12:12</li>
-			<li class="col-xs-12 conteudo-help clearfix" role="alert">
-				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-				<span class="canal">Canal de vendas / Mass Channel - Retail</span>
-				<span class="status">Tipo de Impacto</span>
-				<span class="descricao">Teste5</span>
-			</li>
-		</ul>
-		<ul class="row btn-help item bg-amarelo">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">URA Cadauto</li>
-			<li class="col-xs-3 text-center">Pendente</li>
-			<li class="col-xs-3 text-center">12:12</li>
-			<li class="col-xs-12 conteudo-help clearfix" role="alert">
-				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-				<span class="canal">Canal de vendas / Mass Channel - Retail</span>
-				<span class="status">Tipo de Impacto</span>
-				<span class="descricao">Teste5</span>
-			</li>
-		</ul>
-		<ul class="row btn-help item bg-amarelo">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">URA Cadauto</li>
-			<li class="col-xs-3 text-center">Pendente</li>
-			<li class="col-xs-3 text-center">12:12</li>
-			<li class="col-xs-12 conteudo-help clearfix" role="alert">
-				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-				<span class="canal">Canal de vendas / Mass Channel - Retail</span>
-				<span class="status">Tipo de Impacto</span>
-				<span class="descricao">Teste5</span>
-			</li>
-		</ul>
-		<ul class="row btn-help item bg-amarelo">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">URA Cadauto</li>
-			<li class="col-xs-3 text-center">Pendente</li>
-			<li class="col-xs-3 text-center">12:12</li>
-			<li class="col-xs-12 conteudo-help clearfix" role="alert">
-				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-				<span class="canal">Canal de vendas / Mass Channel - Retail</span>
-				<span class="status">Tipo de Impacto</span>
-				<span class="descricao">Teste5</span>
-			</li>
-		</ul>
-		<ul class="row btn-help item bg-amarelo">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">URA Cadauto</li>
-			<li class="col-xs-3 text-center">Pendente</li>
-			<li class="col-xs-3 text-center">12:12</li>
-			<li class="col-xs-12 conteudo-help clearfix" role="alert">
-				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-				<span class="canal">Canal de vendas / Mass Channel - Retail</span>
-				<span class="status">Tipo de Impacto</span>
-				<span class="descricao">Teste5</span>
-			</li>
-		</ul>
-		<ul class="row btn-help item bg-amarelo">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">URA Cadauto</li>
-			<li class="col-xs-3 text-center">Pendente</li>
-			<li class="col-xs-3 text-center">12:12</li>
-			<li class="col-xs-12 conteudo-help clearfix" role="alert">
-				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-				<span class="canal">Canal de vendas / Mass Channel - Retail</span>
-				<span class="status">Tipo de Impacto</span>
-				<span class="descricao">Teste5</span>
-			</li>
-		</ul>
-		<ul class="row btn-help item bg-amarelo">
-			<li class="col-xs-3">Ativação Pré-Pago</li>
-			<li class="col-xs-3 text-center">URA Cadauto</li>
-			<li class="col-xs-3 text-center">Pendente</li>
-			<li class="col-xs-3 text-center">12:12</li>
-			<li class="col-xs-12 conteudo-help clearfix" role="alert">
-				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-				<span class="canal">Canal de vendas / Mass Channel - Retail</span>
-				<span class="status">Tipo de Impacto</span>
-				<span class="descricao">Teste5</span>
-			</li>
-		</ul>
-    </div> 
-	</div>
-
+        <div class="bs-component wlogout">
+	        <div class="modal">
+	            <div class="modal-dialog">
+	                <div class="modal-content">
+	                    <div class="modal-header">
+	                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	                        <h4 class="modal-title"HDC - Logout</h4>
+	                    </div>
+	                    <div class="modal-body">
+	                        <p>Você realmente deseja sair do sistema?</p>
+	                    </div>
+	                    <div class="modal-footer">
+	                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+	                        <button type="button" class="btn btn-primary">Logout</button>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+    </div>
+    </div>
 
 	<!-- inject:js -->
 
@@ -247,14 +228,35 @@
 	<script src="js/ripples.min.js"></script>
 
 	<!-- endinject -->
-	<script type="text/javascript">
+    <script type="text/javascript">
 		
 		$(document)
-			.on("click",".btn-help",function(){
-				$(this).find('li.conteudo-help').toggle();
+			.on("click",".item",function(){
+				$(this).parents('.panel-body').find('.alert').toggle();
 				return false;
 			});
 
+		$(document).on('click', '.clickable-span', function() {
+				document.location = $(this).data('href');
+			});
+		$(document).on('focus', '.busca', function(){
+				$(this).removeClass('empty');
+			});
+		$(document).on('click', 'button .mdi-action-search', function(){
+				$('.busca-conteudo').toggle();
+			});
+		$(document).on("click",".navbar-settings-collapse",function(){
+			$(this).parents('.page').find('.modal').show();
+			return false;
+		});
+		$(document).on("click",".modal-header .close",function(){
+			$(this).parents('.page').find('.modal').hide();
+			return false;
+		});
+		$(document).on("click",".modal-footer .btn-default",function(){
+			$(this).parents('.page').find('.modal').hide();
+			return false;
+		});
 	</script>
 </body>
 </html>

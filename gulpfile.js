@@ -39,3 +39,4 @@ gulp.task('all', function () {
     './files/js/*.js'], {read: false}), {relative: true}))
   .pipe(gulp.dest('./files'));
 });
+
