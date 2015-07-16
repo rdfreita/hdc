@@ -49,50 +49,26 @@
 	            	<button type="button" class="navbar-toggle navbar-busca" data-toggle="collapse">
 	            		<span class="mdi-action-search"></span>
 	            	</button>
-	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                </button>
 	                <button type="button" class="navbar-toggle settings" data-toggle="collapse" data-target=".navbar-settings-collapse">
 	            		<a href="configuracao.html"><span class="mdi-action-settings"></span></a>
 	            	</button>
 	            	
-	                <a class="navbar-brand" href="javascript:void(0)">
+	                <a class="navbar-brand" href="index.html">
 	                	<span class="mdi-navigation-chevron-left"></span>HDC
 	                </a>
-	            </div>
-	            <div class="navbar-collapse collapse navbar-responsive-collapse">
-	                <ul class="nav navbar-nav">
-	                    <li class="active"><a href="index.html">Home</a></li>
-	                    <li><a href="#">Status do Sistema</a></li>
-	                    <li><a href="#">status Link de Loja</a></li>
-	                    <li><a href="#">Status dos Chamados</a></li>
-	                </ul>
 	            </div>
 	            <!-- Campo de busca -->
 			    <form class="bs-component busca-conteudo clearfix">
 				    <div class="form-group">
-			            <div class="form-control-wrapper">
-			            	<input class="form-control empty busca" id="focusedInput" type="search">
-			            	<div class="floating-label">Busca</div>
-			            	<span class="material-input"></span>
-			            	<div class="radio radio-default">
-		                        <label>
-		                            <input type="radio" name="filtrosDaBusca" id="optionsRadios1" value="normalizado" checked="checked"><span class="circle"></span><span class="check"></span>
-		                            Normalizado
-		                        </label>
-		                    </div>
-		                    <div class="radio radio-danger">
-		                        <label class="text-danger">
-		                            <input type="radio" name="filtrosDaBusca" id="optionsRadios2" value="pendente"><span class="circle"></span><span class="check"></span>
-		                            Pendente
-		                        </label>
-		                    </div>
-			            </div>
-			            <button type="button">
-		            		<span class="mdi-navigation-chevron-right"></span>
-		            	</button>
+	                    <select class="form-control" id="select">
+	                        <option>Regionais</option>
+	                        <option>Rio de Janeiro</option>
+	                        <option>São Paulo</option>
+	                    </select>
+		            </div>
+		            <div class="centralizar">
+			            <button type="button" class="btn btn-primary btn-raised btn-buscar">Buscar</button>
+			            <button type="clear" class="btn btn-danger btn-raised btn-limpar">Limpar</button>
 			        </div>
 		        </form>
 	        </div>
