@@ -48,9 +48,7 @@
 	    <div class="bs-component">
 	        <div class="navbar navbar-default">
 	            <div class="navbar-header">
-	            	<button type="button" class="navbar-toggle navbar-busca" data-toggle="collapse">
-	            		<span class="mdi-action-search"></span>
-	            	</button>
+
 	                
 	                <button type="button" class="navbar-toggle settings" data-toggle="collapse" data-target=".navbar-settings-collapse">
 	            		<a href="configuracao.html"><span class="mdi-action-settings"></span></a>
@@ -60,27 +58,26 @@
 	                	<span class="mdi-navigation-chevron-left"></span>HDC
 	                </a>
 	            </div>
-	            
-	            
-	            <!-- Campo de busca -->
-			    <form class="bs-component busca-conteudo clearfix">
-				    <div class="form-group">
-	                    <select class="form-control" id="select">
-	                        <option>Regionais</option>
-	                        <option>Rio de Janeiro</option>
-	                        <option>São Paulo</option>
-	                    </select>
-		            </div>
-		            <div class="centralizar">
-			            <button type="button" class="btn btn-primary btn-raised btn-buscar">Buscar</button>
-			            <button type="clear" class="btn btn-danger btn-raised btn-limpar">Limpar</button>
-			        </div>
-		        </form>
 	        </div>
 	    </div>
 	</div>
-	<div class="bs-component conteudo">
+	<div class="bs-component conteudo tres-colunas">
+		<!-- Campo de busca -->
+	    <form class="bs-component busca-conteudo clearfix">
+		    <div class="form-group">
+                <select class="form-control" id="select">
+                    <option>Regionais</option>
+                    <option>Rio de Janeiro</option>
+                    <option>São Paulo</option>
+                </select>
+            </div>
+            <div class="centralizar">
+	            <button type="button" class="btn btn-primary btn-raised btn-buscar">Buscar</button>
+	            <button type="clear" class="btn btn-danger btn-raised btn-limpar">Limpar</button>
+	        </div>
+        </form>
 		<h3>Link de Loja</h3>
+        
         <div class="panel panel-info container">
             <div class="panel-heading">
 	            <ul>
@@ -90,23 +87,7 @@
 				</ul>
             </div>
             <div class="panel-body">
-                <ul class="row item">
-					<li>teste</li>
-					<li>Pendente</li>
-					<li>12:12</li>
-				</ul>
-            </div>
-        </div>
-        <div class="panel panel-info container">
-            <div class="panel-heading">
-	            <ul>
-					<li>Loja</li>
-					<li>Status</li>
-					<li>Previsão de Retorno</li>
-				</ul>
-            </div>
-            <div class="panel-body">
-                <ul class="row btn-help item">
+                <ul class="item">
 					<li>teste</li>
 					<li>Pendente</li>
 					<li>12:12</li>
@@ -122,16 +103,32 @@
 				</ul>
             </div>
             <div class="panel-body">
-                <ul class="row btn-help item">
+                <ul class="item">
 					<li>teste</li>
 					<li>Pendente</li>
 					<li>12:12</li>
 				</ul>
-				<div class="alert alert-dismissable alert-danger">
-					<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-					<span class="status">Tipo de Impacto</span>
-					<span class="descricao">Teste</span>
-				</div>
+            </div>
+            <div class="panel-footer alert alert-dismissable alert-danger">
+				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
+				<span class="status">Tipo de Impacto</span>
+				<span class="descricao">Teste</span>
+			</div>
+        </div>
+        <div class="panel panel-info container">
+            <div class="panel-heading">
+	            <ul>
+					<li>Loja</li>
+					<li>Status</li>
+					<li>Previsão de Retorno</li>
+				</ul>
+            </div>
+            <div class="panel-body">
+                <ul class="item">
+					<li>teste</li>
+					<li>Pendente</li>
+					<li>12:12</li>
+				</ul>
             </div>
         </div>
         <div class="panel panel-info container">
@@ -143,23 +140,7 @@
 				</ul>
             </div>
             <div class="panel-body">
-                <ul class="row btn-help item">
-					<li>teste</li>
-					<li>Pendente</li>
-					<li>12:12</li>
-				</ul>
-            </div>
-        </div>
-        <div class="panel panel-info container">
-            <div class="panel-heading">
-	            <ul>
-					<li>Loja</li>
-					<li>Status</li>
-					<li>Previsão de Retorno</li>
-				</ul>
-            </div>
-            <div class="panel-body">
-                <ul class="row btn-help item">
+                <ul class="item">
 					<li>teste</li>
 					<li>Pendente</li>
 					<li>12:12</li>
@@ -175,17 +156,17 @@
 				</ul>
             </div>
             <div class="panel-body">
-                <ul class="row btn-help item">
+                <ul class="item">
 					<li>teste</li>
 					<li>Pendente</li>
 					<li>12:12</li>
 				</ul>
-				<div class="alert alert-dismissable alert-danger">
-					<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
-					<span class="status">Tipo de Impacto</span>
-					<span class="descricao">Teste</span>
-				</div>
             </div>
+        	<div class="panel-footer alert alert-dismissable alert-danger">
+				<span class="cabecalho text-right">Inicio - 17/03/2015 10:00:00</span>
+				<span class="status">Tipo de Impacto</span>
+				<span class="descricao">Teste</span>
+			</div>
         </div>
 
         <div class="bs-component wlogout">
@@ -212,17 +193,17 @@
 
 	<!-- inject:js -->
 
+	<script src="js/jquery.min.js"></script>
+
+	<script src="js/npm.js"></script>
+
 	<script src="js/bootstrap.js"></script>
 
 	<script src="js/bootstrap.min.js"></script>
 
-	<script src="js/jquery.min.js"></script>
-
 	<script src="js/material.js"></script>
 
 	<script src="js/material.min.js"></script>
-
-	<script src="js/npm.js"></script>
 
 	<script src="js/ripples.js"></script>
 
@@ -233,7 +214,7 @@
 		
 		$(document)
 			.on("click",".item",function(){
-				$(this).parents('.panel-body').find('.alert').toggle();
+				$(this).parents('.panel').find('.alert').toggle();
 				return false;
 			});
 
@@ -250,12 +231,9 @@
 			$(this).parents('.page').find('.modal').show();
 			return false;
 		});
-		$(document).on("click",".modal-header .close",function(){
-			$(this).parents('.page').find('.modal').hide();
-			return false;
-		});
-		$(document).on("click",".modal-footer .btn-default",function(){
-			$(this).parents('.page').find('.modal').hide();
+		//Botão de busca
+		$(document).on("click","select.form-control",function(){
+			$(this).parents('.busca-conteudo').find('.centralizar').show();
 			return false;
 		});
 	</script>

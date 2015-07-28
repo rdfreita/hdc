@@ -1,3 +1,16 @@
+//Mixins
+.item-chamado(@width, @border, @height, @display){
+	width: @width;
+	font-size: 11px;
+	border-right: @border;
+	height: @height;
+	float: none;
+	display: @display;
+	vertical-align: middle;
+}
+
+//Final dos Mixins
+
 body{
 	background-image: url("../img/fundo-sampa.jpg");
 	background-attachment: fixed;
@@ -7,22 +20,27 @@ body{
 	padding-top: 0;
 
 }
-body .page{
-	position: relative;
-	height: 100%;
-	padding-bottom: 20px;
+body{
+	.page{
+		position: relative;
+		height: 100%;
+		padding-bottom: 20px;
+
+		.conteudo{
+			height: 100%;
+		}
+
+		.background-com-opacidade{
+			background: rgba(255, 255, 255, 0.8);
+		}
+	}
+	footer{
+		position: absolute;
+		bottom: 0;
+		clear: both;
+	}
 }
-body .page .conteudo{
-	height: 100%;
-}
-body .page .background-com-opacidade{
-	background: rgba(255, 255, 255, 0.8);
-}
-footer{
-	position: absolute;
-	bottom: 0;
-	clear: both;
-}
+
 .centralizar{
 	width: 80%;
 	margin: 0 auto;
@@ -90,8 +108,8 @@ body .navbar .navbar-brand .mdi-navigation-chevron-left{
 }
 body .navbar .navbar-header .settings a{
 	padding: 0;
-	margin: 11px 0 0;
 	color: #999;
+	display: block;
 }
 body .navbar .navbar-header .navbar-toggle{
 	margin-right: 0;
@@ -103,7 +121,7 @@ body .navbar .navbar-header .navbar-toggle.settings{
 	margin-top: 3px;
 	margin-bottom: 0;
 	padding-bottom: 0;
-	padding-right: 5px;
+	padding-right: 10px;
 }
 /*Fim do menu principal*/
 
@@ -214,58 +232,67 @@ body .panel .alert .descricao{
 	padding-bottom: 5px;
 }
 body .panel .panel-heading{
-	height: 50px;
 	border-radius: 0;
+	padding: 0;
 }
-body.status-chamados .panel .panel-body{
-	padding: 0 10px;
+body .panel .panel-body{
+	padding: 0;
 }
-body.status-chamados .panel ul{
+body .panel ul{
 	padding-left: 0;
 	margin-bottom: 0;
+	display: table;
+	width: 100%;
 }
-body.status-chamados .panel .panel-heading{
-	height: 35px;
-}
-body.status-chamados .panel .panel-body ul li{
-	width: 25%;
-	font-size: 11px;
-	border-right: 1px solid #ccc;
-	height: 45px;
-	padding: 10px 10px 0;
-}
-body.status-chamados .panel .panel-body ul li.bg-verde{
+
+body .panel .panel-body ul li:last-child{
 	border-right: none;
 }
-body.status-chamados .panel .panel-heading ul li{
-	width: 50%;
+body .tres-colunas .panel .panel-body ul li{
+	.item-chamado(33%, 1px solid #ccc, 25px, table-cell);
+	padding: 10px 5px;
 	text-align: center;
 }
-body.status-chamados .panel .panel-body ul li.rodape-chamados{
-	width: 96.5%;
-	display: block;
-	float: none;
-	height: 30px;
-	line-height: 30px;
+body .quatro-colunas .panel .panel-body ul li{
+	.item-chamado(25%, 1px solid #ccc, 25px, table-cell);
+}
+body .panel .panel-body ul li.ultima-coluna{
+	border-right: none;
+}
+body .tres-colunas .panel .panel-heading ul li{
+	.item-chamado(33%, none, 25px, table-cell);
+	text-align: center;
+}
+body .quatro-colunas .panel .panel-heading ul li{
+	.item-chamado(25%, none, 25px, table-cell);
+}
+body .panel .panel-body span.rodape-chamados{
+	.item-chamado(100%, none, 20px, table);
+	line-height: 20px;
 	text-align: right;
 	padding:0 5px 0 0;
 	background-color: rgba(0, 0, 0, 0.5);
-	clear: both;
-	margin-top: 35px;
 	color: #fff;
-	
-	margin-left: 5px;
 
 }
-body.status-chamados .panel .panel-footer{
-	background-color: #03a9f4;
+body .panel .panel-footer{
   	color: rgba(255,255,255,.84);
   	margin: 0;
   	padding: 2px 5px;
   	font-size: 11px;
 }
-body.status-chamados .panel .panel-footer .descricao{
+body .panel .panel-footer.alert{
+	padding: 0;
+}
+body .panel .panel-footer .descricao{
 	text-align: left;
+	padding: 5px;
+}
+body .alert-info{
+	background-color: #03a9f4;
+}
+body .alert-danger{
+	background-color: #f44336;
 }
 
 /*Fim do painel dos chamados*/
@@ -281,12 +308,14 @@ html, body{
 body{
 	.busca-conteudo{
 		background-color: #fff;
-		padding: 15px 0;
-		margin-top: -20px;
-		display: none;
+		padding: 0 0 10px;
+		margin-top: 60px;
 		-webkit-box-shadow: 0px 15px 10px -8px rgba(0,0,0,0.75);
   		-moz-box-shadow: 0px 15px 10px -8px rgba(0,0,0,0.75);
   		box-shadow: 0px 15px 10px -8px rgba(0,0,0,0.75);
+  		width: 90%;
+  		margin-left: auto;
+  		margin-right: auto;
 
 		.form-control-wrapper{
 			width: 70%;
@@ -311,28 +340,33 @@ body{
 		button{
 			float: left;
 			width: auto;
-			height: 40px;
+			height: 30px;
 			width: 35%;
 			padding: 0;
+			margin: 10px 0;
 
 			&.btn-buscar{
 
 			}
 
 			&.btn-limpar{
-				margin-left: 20px;
+				margin-left: 30%;
 			}
 		}
 
 		.form-group{
-			float: left;
-			width: 70%;
-			margin-top: 10px;
-			margin-right: 20px;
+			width: 80%;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 0;
 
 			.form-control{
-				margin-left: 25px;
+				margin: 10px auto 0;
+				display: block;
 			}
+		}
+		.centralizar{
+			display: none;
 		}
 
 	}

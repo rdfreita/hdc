@@ -36,7 +36,14 @@ gulp.task('all', function () {
     './files/css/material.min.css',
     './files/css/ripples.min.css',
     './files/css/roboto.min.css',
-    './files/js/*.js'], {read: false}), {relative: true}))
+    './files/js/jquery.min.js',
+    './files/js/npm.js',
+    './files/js/bootstrap.js',
+    './files/js/bootstrap.min.js',
+    './files/js/material.js',
+    './files/js/material.min.js',
+    './files/js/ripples.js',
+    './files/js/ripples.min.js'], {read: false}), {relative: true}))
   .pipe(gulp.dest('./files'));
 });
 
