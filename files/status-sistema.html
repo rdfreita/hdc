@@ -243,6 +243,10 @@
 			$(this).parents('.busca-conteudo').find('.centralizar').show();
 			return false;
 		});
+		$(document).on("click",".busca-conteudo .centralizar .btn-buscar",function(){
+			$('.centralizar').hide();
+			return false;
+		});
 	</script>
 </body>
 </html>

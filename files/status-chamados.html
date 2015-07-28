@@ -50,10 +50,25 @@
 	                <button type="button" class="navbar-toggle settings" data-toggle="collapse" data-target=".navbar-settings-collapse">
 	            		<a href="configuracao.html"><span class="mdi-action-settings"></span></a>
 	            	</button>
+	            	<button type="button" class="navbar-toggle search" data-toggle="collapse" data-target=".navbar-settings-collapse">
+	            		<a href="#"><span class="mdi-action-search"></span></a>
+	            	</button>
 	            	
 	                <a class="navbar-brand" href="index.html">
 	                	<span class="mdi-navigation-chevron-left"></span>HDC
 	                </a>
+
+	                <!-- Busca chamados -->
+				    <form class="bs-component busca-chamado clearfix">
+					    <div class="form-group">
+					    	<label>Número do chamado</label>
+					    	<input type="text" class="form-control" name="busca-chamado">
+			            </div>
+			            <div class="centralizar">
+				            <button type="button" class="btn btn-primary btn-raised btn-buscar">Buscar</button>
+				            <button type="clear" class="btn btn-danger btn-raised btn-limpar">Limpar</button>
+				        </div>
+			        </form>
 	            </div>
 	        </div>
 	    </div>
@@ -182,7 +197,10 @@
 				$(this).removeClass('empty');
 			});
 		$(document).on('click', 'button .mdi-action-search', function(){
-				$('.busca-conteudo').toggle();
+				$('.busca-chamado').toggle();
+			});
+		$(document).on('click', '.busca-chamado .centralizar .btn-buscar', function(){
+				$('.busca-chamado').hide();
 			});
 		$(document).on("click",".navbar-settings-collapse",function(){
 			$(this).parents('.page').find('.modal').show();
@@ -192,6 +210,10 @@
 		//Botão de busca
 		$(document).on("click","select.form-control",function(){
 			$(this).parents('.busca-conteudo').find('.centralizar').show();
+			return false;
+		});
+		$(document).on("click",".busca-conteudo .centralizar .btn-buscar",function(){
+			$('.centralizar').hide();
 			return false;
 		});
 	</script>

@@ -88,7 +88,7 @@
             </div>
             <div class="panel-body">
                 <ul class="item">
-					<li>teste</li>
+					<li>LOJA NORTE SUL PLAZA SHOPPING</li>
 					<li>Pendente</li>
 					<li>12:12</li>
 				</ul>
@@ -104,7 +104,7 @@
             </div>
             <div class="panel-body">
                 <ul class="item">
-					<li>teste</li>
+					<li>LOJA NORTE SUL PLAZA SHOPPING</li>
 					<li>Pendente</li>
 					<li>12:12</li>
 				</ul>
@@ -234,6 +234,10 @@
 		//Botão de busca
 		$(document).on("click","select.form-control",function(){
 			$(this).parents('.busca-conteudo').find('.centralizar').show();
+			return false;
+		});
+		$(document).on("click",".busca-conteudo .centralizar .btn-buscar",function(){
+			$('.centralizar').hide();
 			return false;
 		});
 	</script>

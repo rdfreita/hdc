@@ -123,6 +123,14 @@ body .navbar .navbar-header .navbar-toggle.settings{
 	padding-bottom: 0;
 	padding-right: 10px;
 }
+body .navbar .navbar-header .navbar-toggle.search{
+	padding: 9px 0 0;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+body .navbar .navbar-header .navbar-toggle.search a{
+	color: #999;
+}
 /*Fim do menu principal*/
 
 
@@ -255,6 +263,8 @@ body .tres-colunas .panel .panel-body ul li{
 }
 body .quatro-colunas .panel .panel-body ul li{
 	.item-chamado(25%, 1px solid #ccc, 25px, table-cell);
+	text-align: center;
+	padding: 10px 5px;
 }
 body .panel .panel-body ul li.ultima-coluna{
 	border-right: none;
@@ -262,9 +272,11 @@ body .panel .panel-body ul li.ultima-coluna{
 body .tres-colunas .panel .panel-heading ul li{
 	.item-chamado(33%, none, 25px, table-cell);
 	text-align: center;
+
 }
 body .quatro-colunas .panel .panel-heading ul li{
 	.item-chamado(25%, none, 25px, table-cell);
+	text-align: center;
 }
 body .panel .panel-body span.rodape-chamados{
 	.item-chamado(100%, none, 20px, table);
@@ -306,7 +318,7 @@ html, body{
 }
 /*Fim da página ocupando a visão toda*/
 body{
-	.busca-conteudo{
+	.busca-conteudo, .busca-chamado{
 		background-color: #fff;
 		padding: 0 0 10px;
 		margin-top: 60px;
@@ -368,7 +380,14 @@ body{
 		.centralizar{
 			display: none;
 		}
+	}
+	.busca-chamado{
+		display: none;
 
+
+		.centralizar{
+			display: block;
+		}
 	}
 }
 
